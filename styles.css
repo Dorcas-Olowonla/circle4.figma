@@ -43,8 +43,8 @@ header {
   & img {
     object-fit: contain;
     aspect-ratio: 1;
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 1.625rem;
+    width: 5.875rem;
   }
 }
 
