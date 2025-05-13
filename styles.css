@@ -1,164 +1,69 @@
-/* styles.css */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap");
 
 :root {
-    --background: #f8f1e7;
-    --text-color: #1e1e1e;
-    --header-bg: #fff;
-    --header-border-color: #ddd;
-    --info-color: #666;
-    --edit-btn-color: #333;
-    --card-bg: white;
-    --caption-span: #aaa;
-    --footer-color: #999;
-    --new-post-color: white;
+  --ff: "Poppins", sans-serif;
+  --bg-white: rgba(255, 255, 255, 0.8);
+  --bg-white-300: rgb(252, 245, 229);
+  --text-dark-100: rgba(33, 33, 33, 0.7);
+  --text-dark-400: rgb(33, 33, 33);
+  --fs-1: 2rem; /*1rem = 16px*/
+  --fs-2: 1.25rem;
+  --fs-3: 1rem;
+  --padding-1: 1rem;
+  --padding-2: 0.75rem;
+  --padding-3: 0.5rem;
+  --padding-4: 0.25rem;
 }
 
-body {
-  font-family: 'Inter', sans-serif;
+* {
+  box-sizing: border-box;
   margin: 0;
-  background: var(--background);
-  color: var(--text-color);
-}
-
-header {
-  background: var(--header-bg);
-  padding: 1rem;
-  text-align: center;
-  border-bottom: 1px solid var(--header-border-color);
-}
-
-.navbar h1 {
-  font-size: 1rem;
-  letter-spacing: 2px;
-}
-
-.profile {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--header-bg);
-  padding: 2rem;
-  flex-wrap: wrap;
-}
-
-.profile-info {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.info h2 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.info p {
-  margin: 0.2rem 0;
-  color: var(--info-color);
-}
-
-.edit-btn {
-  background: none;
-  border: none;
-  color: var(--edit-btn-color);
-  font-size: 0.9rem;
-  cursor: pointer;
   padding: 0;
 }
 
-.new-post {
-  background-color: var(--text-color);
-  color: var(--new-post-color);
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 0.9rem;
+/* Body styling */
+body {
+  font-family: var(--ff);
+  background: var(--bg-white);
+  color: var(--text-dark-100);
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
-}
-
-.card {
-  background: var(--card-bg);
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  display: flex;
-  flex-direction: column;
-}
-
-.card img {
+/* Header Styles */
+header {
+  background-color: var(--bg-white);
   width: 100%;
   height: auto;
-  object-fit: cover;
-}
-
-.caption {
+  padding: var(--padding-4);
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  padding: 0.8rem;
-  font-size: 0.95rem;
-  color: var(--edit-btn-color);
-  align-items: center;
+  justify-content: center;
+
+  /* Header image */
+  & img {
+    object-fit: contain;
+    aspect-ratio: 1;
+    height: 3.5rem;
+    width: 3.5rem;
+  }
 }
 
-.caption span {
-  color: var(--caption-span);
-  font-size: 1rem;
-  cursor: pointer;
+/* Main styling */
+main {
+  flex: 1;
+  background-color: var(--bg-white-300);
 }
 
+/* Footer styling */
 footer {
-  text-align: center;
-  padding: 1.5rem;
-  font-size: 0.9rem;
-  color: var(--footer-color);
-}
+  background-color: var(--bg-white-300);
+  padding: 3.75rem 0;
+  width: 100%;
+  height: auto;
 
-/* Mobile phones */
-@media (max-width: 600px) {
-  .profile {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-  .new-post {
-    align-self: flex-end;
-  }
-}
-
-/* Tablets */
-@media (min-width: 601px) and (max-width: 1024px) {
-  .profile {
-    padding: 1.5rem;
-  }
-  .gallery {
-    padding: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  }
-}
-
-/* Large screens */
-@media (min-width: 1025px) {
-  .gallery {
-    padding: 2rem 4rem;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .profile {
-    padding: 2rem 4rem;
+  /* Footer tag */
+  & .footer-tag {
+    text-align: center;
+    font-size: var(--fs-3);
+    color: var(--text-dark-100);
   }
 }
