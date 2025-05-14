@@ -71,3 +71,34 @@ footer {
     color: var(--text-dark-100);
   }
 }
+
+/* Buttons */
+.button_large {
+  background-color: #212121;
+  color: #fcf5e5;
+  font-size: 1rem;
+  padding: 1.125rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button_large:hover {
+  background-color: rgb(33, 33, 33, 0.8);
+}
+
+.button_secondary {
+  background-color: transparent;
+  color: rgb(33, 33, 33, 0.8);
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-items: center;
+}
+
+.button_secondary:hover {
+  color: #212121;
+}
