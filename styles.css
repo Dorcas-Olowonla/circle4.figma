@@ -59,6 +59,7 @@ main {
 
 /* User-Profile */
 .text-container {
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -68,7 +69,6 @@ main {
   border-bottom-width: 1px;
   justify-content: space-between;
   padding: 1rem;
-
 }
 .user-profile {
   display: flex;
@@ -84,8 +84,12 @@ main {
   margin-right: 16px;
 }
 .user-details {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* flex: 1; */
   overflow: hidden;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .user-name {
   font-size: var(--fs-2);
@@ -105,6 +109,48 @@ main {
   font-style: var(--fs-2);
   color: var(--text-dark-100);
 }
+
+/* Buttons */
+.button_large {
+  background-color: #212121;
+  color: #fcf5e5;
+  font-size: 1rem;
+  padding: 1.125rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  bottom: 1rem;
+  align-self: last baseline;
+}
+
+.button_large i {
+  color: #fcf5e5;
+}
+.button_large:hover {
+  background-color: rgb(33, 33, 33, 0.8);
+}
+
+.button_secondary {
+  background-color: transparent;
+  color: rgb(33, 33, 33, 0.8);
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-items: center;
+}
+
+.button_secondary i{
+  color: rgb(33, 33, 33, 0.8);
+}
+
+.button_secondary:hover {
+  color: #212121;
+}
+
 
 /* Footer styling */
 footer {
@@ -132,6 +178,11 @@ footer {
   }
   .user-name {
   font-size: 1rem;
+  }
+
+  .text-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
