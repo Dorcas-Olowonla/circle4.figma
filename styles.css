@@ -224,6 +224,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .main-container {
+    padding: 0;
+  }
   
   .user-profile {
     flex-direction: column;
@@ -236,19 +239,20 @@ footer {
     height: 80px;
     margin-bottom: 0.75rem;
   }
-
   .text-container {
     flex-direction: column;
     align-items: center;
-    max-width: 288px; /*Match image width*/
+    width: 288px;           /* <-- Set fixed width */
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
+    box-sizing: border-box;
   }
 
   .user-details {
     width: 100%;
     height: auto;
-    align-items: center;  /*merged solution*/
+
   }
   .user-name {
     font-size: 1.25rem;
@@ -273,22 +277,20 @@ footer {
     margin-right: auto;
   }
   
+   .post-flex {
+    max-width: 288px; /* Match image width */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+
   .post-flex-row {
     padding: 0 1rem;
     flex-direction: column;
     align-items: center;
   }
 
-
-  .button_large {
-    margin-top: 1.25rem;
-    margin-bottom: 1rem;
-    align-self: center;
-    width: 100%;
-  }
-  .button_secondary {
-    margin-top: 2rem;
-  }
   
   .post-flex img {
   width: 288px;

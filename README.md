@@ -36,7 +36,7 @@ Insta-Spots-Project/
 | **Kehinde**  | Profile controls (Edit, New Post, Divider) |
 | **Simon**    | Post layout (Image grid/cards) |
 | **Temitayo** | Post descriptions and final submission |
-| **Maurice**  | Like button visual styling |
+| **Emmanuel**  | Like button visual styling |
 | **Mesuur**   | Final integration & live hosting |
 
 ---
