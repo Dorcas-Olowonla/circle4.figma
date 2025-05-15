@@ -129,6 +129,22 @@ main {
   overflow: hidden;
 }
 
+/* Like button */
+.card-content{
+  display: flex;
+  justify-content: space-between;
+  .ri-heart-line{
+    font-size: 20px;
+    transition: all 0.3s ease;
+    color: #808080;
+    cursor: pointer;
+  }
+  .ri-heart-line:hover{
+    color: #000000;
+    transform: scale(1.2);
+  }
+}
+
 /* Buttons */
 .button_large {
   background-color: #212121;
