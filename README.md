@@ -53,16 +53,19 @@ Insta-Spots-Project/
 
 
 3. **Work on your section**
-   Build both desktop and mobile versions of your assigned section.
    
-4. **Commit and push your changes**:
+  - Build both desktop and mobile versions of your assigned section.
+   
+5. **Commit and push your changes**:
     ```bash
     git add .
     git commit -m "Completed [your section name]"
     git push origin your-name-task
 
 
-5. **Create a Pull Request** to `main` (or `dev` if applicable).
+6. **Create a Pull Request** to `main` (or `dev` if applicable).
+
+
 
 ## **How To Run It Locally** 🔧 
     
