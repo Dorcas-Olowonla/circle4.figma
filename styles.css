@@ -147,6 +147,7 @@ main {
 .button_large i {
   color: #fcf5e5;
 }
+
 .button_large:hover {
   background-color: rgb(33, 33, 33, 0.8);
 }
@@ -247,7 +248,7 @@ footer {
   .user-details {
     width: 100%;
     height: auto;
-    align-items: center;
+    align-items: center; // merged solution
   }
   .user-name {
     font-size: 1.25rem;
@@ -278,9 +279,20 @@ footer {
     align-items: center;
   }
 
+
+  .button_large {
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
+    align-self: center;
+    width: 100%;
+  }
+  .button_secondary {
+    margin-top: 2rem;
+  }
+  
   .post-flex img {
   width: 288px;
   height: 288px;
-}
-}
+  }
+
 
