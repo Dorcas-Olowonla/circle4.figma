@@ -248,7 +248,7 @@ footer {
   .user-details {
     width: 100%;
     height: auto;
-    align-items: center; // merged solution
+    align-items: center;  /*merged solution*/
   }
   .user-name {
     font-size: 1.25rem;
@@ -296,3 +296,5 @@ footer {
   }
 
 
+
+}
