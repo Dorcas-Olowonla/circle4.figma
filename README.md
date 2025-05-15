@@ -1,56 +1,77 @@
-# Insta-Spots Project
+# 🚀 Insta-Spots Project
 
-A collaborative HTML/CSS project based on a [Figma design](https://www.figma.com/design/p0yX6Iui9Og3KdRz0D3L5G/Insta-spots?node-id=0-1&p=8efjuKeuVE1mVb8h-0), built by Circle 4.
 
-## Project Structure
+A collaborative **HTML/CSS** project based on a [Figma design](https://www.figma.com/design/p0yX6Iui9Og3KdRz0D3L5G/Insta-spots?node-id=0-1&p=8efjuKeuVE1mVb8h-0), built by **Circle 4** as part of our AltSchool Africa journey. ✨
+
+---
+
+## 📁 Project Structure
 
 Insta-Spots-Project/
-├── index.html
-├── style/
-│ └── main.css
-├── assets/
-│ ├── images/
-│ └── fonts/
-└── README.md
 
-## Team Members & Tasks
+       ├── index.html
+       
+       ├── style/
+       
+       │ └── main.css
+       
+       ├── assets/
+       
+      │ ├── images/
+     
+      │ └── fonts/
+      
+      └── README.md
 
-| Name     | Task |
-|----------|------|
-| Dorcas   | Project setup, repo creation, and PR merging |
-| Andre    | Page body styling |
-| Godwin   | Header and footer layout |
-| Kafilat  | User profile section |
-| Kehinde  | Profile controls |
-| Simon    | Post layout (image cards) |
-| Temitayo | Post descriptions and final submission |
-| Maurice  | Like button styling |
-| Mesuur   | Final integration and hosting |
+---
 
-## How to Contribute
+## 👥 Team Members & Tasks
 
-1. Clone the repo:
-git clone https://github.com/dorcas-olowonla/circle4.figma.git
+| 👤 Name    | 🛠️ Task |
+|-----------|--------|
+| **Dorcas**   | Project setup, repo creation, readme.md, PR merging |
+| **Andre**    | Page body styling (background + fonts) |
+| **Godwin**   | Header and Footer layout |
+| **Kafilat**  | User Profile section (image, name, description) |
+| **Kehinde**  | Profile controls (Edit, New Post, Divider) |
+| **Simon**    | Post layout (Image grid/cards) |
+| **Temitayo** | Post descriptions and final submission |
+| **Maurice**  | Like button visual styling |
+| **Mesuur**   | Final integration & live hosting |
 
-2. Create your branch:
-git checkout -b your-name-task
+---
 
-3. Work on your section (both desktop and mobile versions).
+## 🧑‍💻 How to Contribute
+
+1. **Clone the Repository**  
+   ```bash
+   git clone https://github.com/Dorcas-Olowonla/circle4.figma.git
+
+2. **Create your branch**:
+    ```bash
+   git checkout -b your-name-task
+
+
+3. **Work on your section**
+   Build both desktop and mobile versions of your assigned section.
    
-4. Commit and push your changes:
-git add .
-git commit -m "Completed [your section name]"
-git push origin your-name-task
+4. **Commit and push your changes**:
+    ```bash
+    git add .
+    git commit -m "Completed [your section name]"
+    git push origin your-name-task
 
-5. Create a Pull Request to `main` or `dev`.
 
-## How To Run It Locally 🔧 
+5. **Create a Pull Request** to `main` (or `dev` if applicable).
 
-git clone https://github.com/Dorcas-Olowonla/circle4.figma.git
-cd circle4.figma
-open index.html  # or use Live Server in VS Code
+## **How To Run It Locally** 🔧 
+    
+    git clone https://github.com/Dorcas-Olowonla/circle4.figma.git
+    cd circle4.figma
+    open index.html
+or use Live Server in VS Code
 
-## Final Deliverables
+ ## Final Deliverables
 
 - GitHub Repository ✅
 -  Live Hosted URL 🔄 (to be added by Mesuur)
