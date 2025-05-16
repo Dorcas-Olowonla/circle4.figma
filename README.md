@@ -77,7 +77,7 @@ or use Live Server in VS Code
  ## Final Deliverables
 
 - GitHub Repository ✅
-- 🌐 Live Demo  [View the site on Netlify](https://your-site-name.netlify.app)
+- 🌐 Live Demo  [View the site on Netlify](https://circle4figmaproject.netlify.app)
 
 ## Notes
 
