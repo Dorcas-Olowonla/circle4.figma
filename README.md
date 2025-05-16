@@ -77,7 +77,7 @@ or use Live Server in VS Code
  ## Final Deliverables
 
 - GitHub Repository ✅
--  Live Hosted URL 🔄 (to be added by Mesuur)
+- 🌐 Live Demo  [View the site on Netlify](https://your-site-name.netlify.app)
 
 ## Notes
 
