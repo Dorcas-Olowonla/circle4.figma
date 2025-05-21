@@ -169,14 +169,14 @@ main {
   display: flex;
   justify-content: space-between;
   .ri-heart-line {
-    font-size: 20px;
-    transition: all 0.3s ease;
+    font-size: 24px;
+    /* transition: all 0.3s ease; */
     color: #808080;
     cursor: pointer;
   }
   .ri-heart-line:hover {
     color: #000000;
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
   }
 }
 
@@ -251,6 +251,19 @@ main {
   transform: scale(1.02);
   transition: box-shadow 0.2s, transform 0.2s;
 }
+
+.heart-icon {
+  font-size: 24px;   /* fix size */
+  cursor: pointer;
+  color: gray;
+  transition: color 0.3s ease; /*smooth color change*/
+}
+
+.heart-icon.liked {
+  color: red;
+  /* no font-size change here */
+}
+
 
 .card-content {
   color: rgba(33, 33, 33, 1);
