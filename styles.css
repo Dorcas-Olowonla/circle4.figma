@@ -377,6 +377,12 @@ main {
         border-radius: var(--radius);
         display: none;
       }
+
+      /* File Name */
+      .file-name{
+        display: none;
+        text-align: center;
+      }
     }
   }
 }
