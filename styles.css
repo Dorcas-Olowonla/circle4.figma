@@ -10,6 +10,7 @@
   --fs-2: 1.25rem;
   --fs-3: 1rem;
   --padding-5: 2rem;
+  --padding-5: 2rem;
   --padding-1: 1rem;
   --padding-2: 0.75rem;
   --padding-3: 0.5rem;
@@ -26,11 +27,22 @@
 body {
   min-height: 100vh;
   font-family: var(--ff);
-  background: var(--bg-white-300);
+  background: var(--bg-white-300-300);
   color: var(--text-dark-100);
   display: flex;
   flex-direction: column;
   line-height: 1.4;
+  
+  
+}
+
+
+.main-container {
+  max-width: 1440px;     
+  margin: 0 auto;        
+  padding: 0 2.5rem;
+  width: 100%;
+  box-sizing: border-box; 
   
   
 }
@@ -65,12 +77,13 @@ header {
 
 /* Main styling */
 main {
-  /* flex: 1; */
+  /* /* flex: 1; */ */
   background-color: var(--bg-white-300);
 }
 
 /* User-Profile */
 .text-container {
+  max-width: 1440px;
   max-width: 1440px;
   display: flex;
   align-items: center;
@@ -107,6 +120,11 @@ main {
 
 .user-details section {
   width: 420px;
+  height: 190px;
+}
+
+.user-details section {
+  width: 420px;
 }
 .user-name {
   font-size: var(--fs-1);
@@ -126,6 +144,7 @@ main {
   letter-spacing: 0%;
   font-style: var(--fs-2);
   color: var(--text-dark-100);
+  overflow: hidden;
   overflow: hidden;
 }
 
@@ -208,6 +227,42 @@ main {
 ;
 }
 
+/*Post styling*/
+
+.post-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin: auto 2.5rem;
+  border-bottom: 1px solid rgba(33, 33, 33, 0.4);
+  padding-bottom: 2.5rem;
+}
+.post-flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  justify-content: center;
+  width: 100%;
+ 
+}
+
+.post-flex img {
+  width: 413px;
+  height: 413px;
+  border-radius: 8px;
+}
+
+.post-flex img:hover {
+  box-shadow: 0 4px 16px rgba(33,33,33,0.08);
+  transform: scale(1.02);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.card-content {
+  color: rgba(33, 33, 33, 1);
+;
+}
+
 /* Footer styling */
 footer {
   background-color: var(--bg-white-300);
@@ -225,11 +280,17 @@ footer {
 
 @media (max-width: 768px) {
   
+  
   .user-profile {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
+
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0.75rem;
 
   .profile-pic {
     width: 80px;
@@ -245,23 +306,11 @@ footer {
     margin-right: auto;
   }
 
-  .button_large {
-    margin-top: 1.25rem;
-    margin-bottom: 1rem;
-    align-self: center;
-    width: 100%;
-  }
-
-  .button_secondary {
-    margin-top: 2rem;
-  }
-
   .user-details {
     width: 100%;
     height: auto;
-    align-items: center;
+    align-items: center; // merged solution
   }
-  
   .user-name {
     font-size: 1.25rem;
   }
@@ -289,11 +338,23 @@ footer {
     padding: 0 1rem;
     flex-direction: column;
     align-items: center;
+    max-width: 288px; /*Match image width*/
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .post-flex img {
-  width: 288px;
-  height: 288px;
+
+  .button_large {
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
+    align-self: center;
+    width: 100%;
+  }
+
+  .button_secondary {
+    margin-top: 2rem;
   }
 }
+
+
 
