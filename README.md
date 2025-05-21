@@ -36,7 +36,7 @@ Insta-Spots-Project/
 | **Kehinde**  | Profile controls (Edit, New Post, Divider) |
 | **Simon**    | Post layout (Image grid/cards) |
 | **Temitayo** | Post descriptions and final submission |
-| **Maurice**  | Like button visual styling |
+| **Emmanuel**  | Like button visual styling |
 | **Mesuur**   | Final integration & live hosting |
 
 ---
@@ -77,7 +77,7 @@ or use Live Server in VS Code
  ## Final Deliverables
 
 - GitHub Repository ✅
--  Live Hosted URL 🔄 (to be added by Mesuur)
+- 🌐 Live Demo  [View the site on Netlify](https://circle4figmaproject.netlify.app)
 
 ## Notes
 
