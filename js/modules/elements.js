@@ -26,4 +26,8 @@ export const elements = {
     .querySelector("#imagePreview"),
   fileName: document.querySelector("#fileName"),
   uploadText: document.querySelector("#uploadText"),
+
+  // Card elements
+  cardSection: document.qyerySelector(".post-flex"),
+  cardContainer: document.querySelector(".post-flex-row"),
 };
