@@ -25,3 +25,24 @@ export function heartFunctionality(heart) {
     }
   });
 }
+
+export function createHeart(card) {
+    //Heart creation
+    const heart = document.createElement('i');
+    heart.className = 'ri-heart-line heart-icon';
+
+    // Assign a unique data-id once per heart
+    heart.dataset.id = Date.now() + '-' + Math.random().toString(36).substring(2, 7);
+
+    // Activate your toggle function
+    heartFunctionality(heart);
+
+    card.appendChild(heart);
+}
+
+export function heart() {
+    // Heart Functionality
+    document.querySelectorAll('.heart-icon').forEach(heart => {
+    heartFunctionality(heart);
+  });
+}
