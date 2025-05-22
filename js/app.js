@@ -4,13 +4,14 @@ import { elements } from './modules/elements.js';
 import { openModal, closeModal } from './modules/modal.js';
 import { initProfileData, updateProfile } from './modules/profile.js';
 import { handleFilename, handlePreviewImage } from './modules/imageHandler.js';
-import { heartFunctionality, heart, createHeart } from './modules/heartFunctionality.js';
+import { heart } from './modules/heartFunctionality.js';
 
 // Initialize the application
 function App() {
     // Initialize profile data
     initProfileData();
     setupEventListeners();
+    heart();
 }
 
 // Set up all event listeners
@@ -41,7 +42,5 @@ function setupEventListeners() {
 // Initialize the application when DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
      App();
-     heart();
-     createHeart();
 });
     
