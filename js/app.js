@@ -4,43 +4,48 @@ import { elements } from './modules/elements.js';
 import { openModal, closeModal } from './modules/modal.js';
 import { initProfileData, updateProfile } from './modules/profile.js';
 import { handleFilename, handlePreviewImage } from './modules/imageHandler.js';
-import { heart } from './modules/heartFunctionality.js';
+import { heartFunctionality, heart, createHeart } from './modules/heartFunctionality.js';
 
 // Initialize the application
 function App() {
     // Initialize profile data
     initProfileData();
     setupEventListeners();
-    heart();
 }
 
 // Set up all event listeners
 function setupEventListeners() {
-    // Modal events
-    elements.editProfileButton.addEventListener("click", openModal);
-    elements.closeModalButton.addEventListener("click", closeModal);
-    elements.cancelButton.addEventListener("click", closeModal);
-    
-    // Image upload events
-    elements.imageUpload.addEventListener("change", (e) => {
-        handleFilename(e);
-        handlePreviewImage(e);
-    });
-    
-    // Form submission
-    elements.profileForm.addEventListener("submit", (e) => {
-        e.preventDefault();
-        updateProfile();
-    });
+  // Modal events
+  elements.editProfileButton.addEventListener("click", openModal);
+  elements.closeModalButton.addEventListener("click", closeModal);
+  elements.cancelButton.addEventListener("click", closeModal);
+  //elements.heart-icon.addEventListener("click", heartFunctionality(heart));
+
+  // Image upload events
+  elements.imageUpload.addEventListener("change", (e) => {
+    handleFilename(e);
+    handlePreviewImage(e);
+  });
+
+  // Form submission
+  elements.profileForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    updateProfile();
+  });
+
+  //heart();
 }
 
-
-   
-
-
+// function heart() {
+//   // Heart Functionality
+//   document.querySelectorAll(".heart-icon").forEach((heart) => {
+//     heartFunctionality(heart);
+//   });
+// }
 
 // Initialize the application when DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
      App();
+     heart();
+     createHeart();
 });
-    
