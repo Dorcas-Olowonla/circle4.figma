@@ -26,4 +26,12 @@ export const elements = {
     .querySelector("#imagePreview"),
   fileName: document.querySelector("#fileName"),
   uploadText: document.querySelector("#uploadText"),
+
+  // Modal elements
+  // Post modal elements
+  openPostModalButton: document.querySelector("#openModalBtn"),
+  postModalOverlay: document.querySelector("#postModalOverlay"),
+  postContent: document.querySelector("#postContent"),
+  submitPostButton: document.querySelector("#submitPostBtn"),
+  postErrorMessage: document.querySelector("#errorMsg"),
 };

@@ -103,7 +103,7 @@ header {
 
 /* Main styling */
 main {
-  /* /* flex: 1; */ */
+  /* flex: 1; */ 
   background-color: var(--bg-white-300);
 }
 
@@ -527,4 +527,5 @@ footer {
     width: 288px;
     height: 288px;
   }
+}
 }

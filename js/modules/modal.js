@@ -19,5 +19,9 @@ export function openModal() {
 // Closes the modal and resets the file input
 export function closeModal() {
   elements.modalOverlay.classList.remove("active");
+
+  // Hide both modals explicitly
+  elements.editProfileModal.style.display = "none";
+  elements.newPostModal.style.display = "none";
   resetFileNameInput();
 }
