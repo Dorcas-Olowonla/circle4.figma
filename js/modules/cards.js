@@ -45,7 +45,7 @@ const cards = [
 // Function to render cards
 export function renderCards() {
   const container = elements.cardContainer;
-  container.innerHTML = ""; // Clear previous cards if any
+  container.innerHTML = ""; // Clear previous cards if any available.
   cards.map(card => {
     const article = document.createElement('article');
     article.className = 'card';
