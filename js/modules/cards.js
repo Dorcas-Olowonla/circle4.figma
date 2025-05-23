@@ -38,9 +38,8 @@ const cards = [
     imgAlt: "Post Image 1",
     description: "Val Thorens",
     heartId: "post1"
-  }
-
-  // Add more card objects as needed
+  },
+   // Add more card objects as needed
 ];
 
 // Function to render cards
