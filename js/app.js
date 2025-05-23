@@ -1,7 +1,12 @@
 // app.js - Main application entry point
 
 import { elements } from "./modules/elements.js";
-import { openModal, closeModal } from "./modules/modal.js";
+import {
+  openModal,
+  closeModal,
+  setUpModal,
+  handleClickedOutside,
+} from "./modules/modal.js";
 import { initProfileData, updateProfile } from "./modules/profile.js";
 import { handleFilename, handlePreviewImage } from "./modules/imageHandler.js";
 import { heart } from "./modules/heartFunctionality.js";
@@ -22,7 +27,6 @@ function setupEventListeners() {
   elements.editProfileButton.addEventListener("click", openModal);
   elements.closeModalButton.addEventListener("click", closeModal);
   elements.cancelButton.addEventListener("click", closeModal);
-  //elements.heart-icon.addEventListener("click", heartFunctionality(heart));
 
   // Image upload events
   elements.imageUpload.addEventListener("change", (e) => {
@@ -36,15 +40,11 @@ function setupEventListeners() {
     updateProfile();
   });
 
-  //heart();
+  // Keyboard event listener
+  setUpModal();
+  // modalOverlay
+  handleClickedOutside();
 }
-
-// function heart() {
-//   // Heart Functionality
-//   document.querySelectorAll(".heart-icon").forEach((heart) => {
-//     heartFunctionality(heart);
-//   });
-// }
 
 // Initialize the application when DOM is fully loaded
 document.addEventListener("DOMContentLoaded", () => {
