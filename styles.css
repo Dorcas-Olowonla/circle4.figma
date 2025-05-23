@@ -233,7 +233,8 @@ main {
   padding-bottom: 2.5rem;
 }
 .post-flex-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   flex-direction: row;
   gap: 1.25rem;
   justify-content: center;
@@ -241,8 +242,8 @@ main {
 }
 
 .post-flex img {
-  width: 413px;
-  height: 413px;
+  width: 405px;
+  height: 305px;
   border-radius: 8px;
 }
 

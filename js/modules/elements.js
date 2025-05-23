@@ -28,6 +28,5 @@ export const elements = {
   uploadText: document.querySelector("#uploadText"),
 
   // Card elements
-  cardSection: document.qyerySelector(".post-flex"),
   cardContainer: document.querySelector(".post-flex-row"),
 };
