@@ -38,7 +38,7 @@ export function newPosts() {
                 <i class="ri-heart-line heart-icon" data-id="post1"></i>
             </div>
         `;
-        elements.cardContainer.appendChild(card);
+        elements.cardContainer.prepend(card);
 
         postDialog.close(); // Close the modal after adding the post
 
