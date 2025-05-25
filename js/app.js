@@ -10,7 +10,7 @@ import {
 import { initProfileData, updateProfile } from "./modules/profile.js";
 import { handleFilename, handlePreviewImage } from "./modules/imageHandler.js";
 import { heart } from "./modules/heartFunctionality.js";
-import { renderCards } from "./modules/cards.js";
+import { previewImageModal, renderCards } from "./modules/cards.js";
 import { newPosts } from "./modules/newPost.js";
 
 // Initialize the application
@@ -21,6 +21,7 @@ function App() {
   renderCards();
   heart();
   newPosts();
+  previewImageModal()
 }
 
 // Set up all event listeners
