@@ -12,6 +12,7 @@ import { handleFilename, handlePreviewImage } from "./modules/imageHandler.js";
 import { heart } from "./modules/heartFunctionality.js";
 import { previewImageModal, renderCards } from "./modules/cards.js";
 import { newPosts } from "./modules/newPost.js";
+import { handlePostDialogClickOutside } from "./modules/modal.js";
 
 // Initialize the application
 function App() {
@@ -21,7 +22,8 @@ function App() {
   renderCards();
   heart();
   newPosts();
-  previewImageModal()
+  previewImageModal();
+  handlePostDialogClickOutside();
 }
 
 // Set up all event listeners
