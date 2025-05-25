@@ -243,7 +243,7 @@ main {
 
 .post-flex img {
   width: 405px;
-  height: 305px;
+  height: 405px;
   border-radius: 8px;
 }
 
@@ -479,6 +479,7 @@ footer {
   }
 
   .post-flex {
+    /* flex-direction: column; */
     max-width: 288px; /* Match image width */
     width: 100%;
     margin-left: auto;
@@ -488,7 +489,7 @@ footer {
 
   .post-flex-row {
     padding: 0 1rem;
-    flex-direction: column;
+     grid-template-columns: repeat(1, 1fr);
     align-items: center;
   }
 
