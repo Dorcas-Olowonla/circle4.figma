@@ -30,7 +30,7 @@ export const elements = {
   // Card elements
   cardContainer: document.querySelector(".post-flex-row"),
 
-  // New post elements (for creating new posts)
+  // New post elements
   newPostButton: document.querySelector("#newPostButton"),
   newPostModal: document.querySelector("#postDialog"),
 };

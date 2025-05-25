@@ -85,3 +85,68 @@ or use Live Server in VS Code
 - Use the same fonts, colors, and spacing.
 - Check Figma for font size, padding, etc.
 - Ask Dorcas (me) if you have any PR or folder structure questions.
+
+  # 🚀 Insta-Spots Project contd with Javascript integration
+ 
+
+**Insta-Spot Project** is a dynamic, single-user blog platform where each blog post and interface element is interactive. Built using HTML, CSS, and JavaScript, the project provides a seamless and modern experience with hover effects, modals, profile editing, and dynamic content rendering.
+
+---
+
+## 🚀 Features
+
+- ✅ Editable user profile with modal pop-up
+- ✅ Live image upload with filename and preview
+- ✅ Dynamic rendering of blog cards
+- ✅ Like (heart) button functionality on posts
+- ✅ Click and hover interactions for rich UI
+- ✅ Accessible modal with keyboard and click-outside support
+- ✅ Fully responsive layout for mobile and desktop
+
+---
+
+## 👥 Team Members & Tasks
+
+| 👤 Name    | 🛠️ Task |
+|-----------|--------|
+| **Dorcas**   | Team Coordination & Code Integration |
+| **Andre**    | Dynamic card collection|
+| **Godwin**   | Edit Profile Modal & Modal Accessibility Features |
+| **Kafilat**  | New Post Modal & Validation |
+| **Kehinde**  | New Post Modal & Validation  |
+| **Simon**    | Image Preview Modal |
+| **Temitayo** | Like/Unlike Heart Fuctionality |
+| **Emmanuel** | Modal Accessibility Features  |
+| **Mesuur**   | Documentation & Presentation |
+
+
+## 📘 User Guide
+
+### 🧑‍💼 Editing Profile
+
+- Click on **"Edit Profile"** to open a modal form.
+- Upload a new profile picture – it previews instantly and shows the file name.
+- Click **"Save"** to apply changes or **"Cancel"** to discard.
+
+### 🖼️ Interacting with Posts
+
+- Posts are displayed as cards when the page loads.
+- Click the **❤️ heart icon** to like/unlike a post.
+
+### 🔐 Modal and Accessibility
+
+- Press the **Escape** key to close modals.
+- Click outside the modal to close it intuitively.
+
+---
+
+## 📂 Getting Started
+
+To run the project locally:
+
+```bash
+git clone https://github.com/yourusername/insta-spot-project.git
+cd insta-spot-project
+open index.html
+
+
