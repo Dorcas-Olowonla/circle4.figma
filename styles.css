@@ -519,3 +519,32 @@ dialog {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
+#postTitle {
+  width: 100%;
+  padding: 2px;
+}
+
+#postOkBtn{
+  width: 48%;
+  padding: 6px 3px;
+  cursor: pointer;
+  background-color: rgb(33, 33, 33, 0.8);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+
+#postOkBtn:hover {
+  background-color: #212121;
+  color: #fff;
+}
+
+.post_cancel{
+  width: 48%;
+  padding: 2px ;
+  background-color: transparent;
+  border: none;
+  color: #000;
+  cursor: pointer;
+}
