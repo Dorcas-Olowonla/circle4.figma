@@ -32,10 +32,13 @@
             <div class="user-details">
               <section>
                 <h2 class="user-name" id="profileTitle">
-                  Aliauna Damala Bouga Time Bongo Puru Nacka Lu Lu Lu Badara Akon
+                  Aliauna Damala Bouga Time Bongo Puru Nacka Lu Lu Lu Badara
+                  Akon
                 </h2>
                 <p class="user-description" id="profileDescription">
-                  Known mononymously as Akon (/ˈeɪkɒn/), is a Senegalese-American singer, record producer, and entrepreneur. An influential figure in modern world...
+                  Known mononymously as Akon (/ˈeɪkɒn/), is a
+                  Senegalese-American singer, record producer, and entrepreneur.
+                  An influential figure in modern world...
                 </p>
               </section>
 
@@ -48,7 +51,7 @@
               </button>
             </div>
           </div>
-          <button class="button_large" type="button">
+          <button class="button_large" type="button" id="newPostButton">
             <i class="ri-add-line"></i> New Post
           </button>
         </section>
@@ -60,13 +63,30 @@
           </div>
         </section>
 
+        <!-- Changes made starts here-->
+        <!-- Post Dialog with file input -->
+        <dialog id="postDialog">
+          <form method="dialog">
+            <label>Select Image:</label><br />
+            <input type="file" id="postImage" accept="image/*" /><br /><br />
+            <label>Post Title:</label><br />
+            <input id="postTitle" type="text"/>
+            <br /><br />
+            <div>
+              <button type="button" id="postOkBtn">Post</button>
+              <button type="button" onclick="postDialog.close()" class="post_cancel">Cancel</button>
+            </div>
+          </form>
+        </dialog>
+        <!-- Changes made ends here-->
+
         <!-- Modal Section -->
         <section id="modalOverlay" class="modal-overlay">
           <!-- Modal -->
           <article id="editProfileModal" class="modal">
             <div class="modal-header">
               <h3 class="modal-title">Edit Profile</h3>
-              <button class="modal-close" id="closeModalButton">
+              <button type="button" class="modal-close" id="closeModalButton">
                 <i class="ri-close-line close-icon"></i>
               </button>
             </div>

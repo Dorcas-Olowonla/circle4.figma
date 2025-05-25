@@ -410,6 +410,20 @@ main {
   transform: translateY(0);
 }
 
+/* Center the dialog element */
+#postDialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+  background: #fff;
+  z-index: 1000;
+}
+
 /* Footer styling */
 footer {
   background-color: var(--bg-white-300);
@@ -497,4 +511,41 @@ footer {
     width: 288px;
     height: 288px;
   }
+}
+
+/* Dialog styling */
+dialog {
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#postTitle {
+  width: 100%;
+  padding: 2px;
+}
+
+#postOkBtn{
+  width: 48%;
+  padding: 6px 3px;
+  cursor: pointer;
+  background-color: rgb(33, 33, 33, 0.8);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+
+#postOkBtn:hover {
+  background-color: #212121;
+  color: #fff;
+}
+
+.post_cancel{
+  width: 48%;
+  padding: 2px ;
+  background-color: transparent;
+  border: none;
+  color: #000;
+  cursor: pointer;
 }
