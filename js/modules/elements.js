@@ -33,4 +33,10 @@ export const elements = {
   // New post elements
   newPostButton: document.querySelector("#newPostButton"),
   newPostModal: document.querySelector("#postDialog"),
+
+  //imageModal
+  imageModal: document.querySelector(".imageModalOverlay"),
+  closeImageModalButton: document.querySelector("#closeImgModal"),
+  imgModalPreview: document.querySelector("#imgModalPreview"),
+  imgModalTitle: document.querySelector("#imgCaption"),
 };
