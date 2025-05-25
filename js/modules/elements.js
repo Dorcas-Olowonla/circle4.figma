@@ -27,11 +27,10 @@ export const elements = {
   fileName: document.querySelector("#fileName"),
   uploadText: document.querySelector("#uploadText"),
 
-  // Modal elements
-  // Post modal elements
-  openPostModalButton: document.querySelector("#openModalBtn"),
-  postModalOverlay: document.querySelector("#postModalOverlay"),
-  postContent: document.querySelector("#postContent"),
-  submitPostButton: document.querySelector("#submitPostBtn"),
-  postErrorMessage: document.querySelector("#errorMsg"),
+  // Card elements
+  cardContainer: document.querySelector(".post-flex-row"),
+
+  // New post elements (for creating new posts)
+  newPostButton: document.querySelector("#newPostButton"),
+  newPostModal: document.querySelector("#postDialog"),
 };
