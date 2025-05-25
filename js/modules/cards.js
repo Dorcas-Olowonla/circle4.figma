@@ -55,7 +55,7 @@ export function renderCards() {
     const article = document.createElement('article');
     article.className = 'card';
     article.innerHTML = `
-      <img src="${card.imgSrc}" alt="${card.imgAlt}" />
+      <img src="${card.imgSrc}" alt="${card.description}" />
       <div class="card-content">
         <p>${card.description}</p>
         <i class="ri-heart-line heart-icon" data-id="${card.heartId}"></i>
@@ -64,5 +64,37 @@ export function renderCards() {
     return container.appendChild(article);
   });
 }
+
+export function previewImageModal() {
+  const imageCards = document.querySelectorAll(".card img");
+  imageCards.forEach((image) => {
+    image.addEventListener("click", (e) => {
+      const target = e.target;
+      if (target.tagName === "IMG") {
+        const imgSrc = target.src;
+        const imgCaption = target.alt;
+        
+        elements.imgModalPreview.src = imgSrc;
+        elements.imgModalTitle.textContent = imgCaption;
+
+        elements.imageModal.classList.add("active");
+        
+      }
+    });
+  });
+}
+
+elements.closeImageModalButton.addEventListener("click", () => {
+  if (elements.imageModal.classList.contains("active")) {
+    elements.imageModal.classList.remove("active");
+  }
+});
+
+document.addEventListener("click", (e) => {
+  if (e.target === elements.imageModal && elements.imageModal.classList.contains("active")) {
+    elements.imageModal.classList.remove("active");
+  }
+  
+});
 
 // Usage: call renderCards() after DOM is loaded
