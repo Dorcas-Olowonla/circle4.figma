@@ -1,42 +1,47 @@
 import { elements } from "./elements.js";
 
-
 // Array of card data
 const cards = [
   {
-    imgSrc: "https://raw.githubusercontent.com/slyde619/SpotImages/refs/heads/main/images/long-bridge.jpg",
-    imgAlt: "Post Image 1",
-    description: "Val Thorens",
-    heartId: "post1"
-  },
-  {
-    imgSrc: "https://raw.githubusercontent.com/slyde619/SpotImages/refs/heads/main/images/mountain-house.jpg",
-    imgAlt: "Post Image 1",
-    description: "Val Thorens",
-    heartId: "post1"
-  },
-  {
-    imgSrc: "https://raw.githubusercontent.com/slyde619/SpotImages/refs/heads/main/images/outdoor-cafe.jpg",
-    imgAlt: "Post Image 1",
-    description: "Val Thorens",
-    heartId: "post1"
-  },
-  {
-    imgSrc: "https://raw.githubusercontent.com/slyde619/SpotImages/refs/heads/main/images/restaurant-terrace.jpg",
-    imgAlt: "Post Image 1",
-    description: "Val Thorens",
-    heartId: "post1"
-  },
-  {
-    imgSrc: "https://raw.githubusercontent.com/slyde619/SpotImages/refs/heads/main/images/tunnel-morning-light.jpg",
-    imgAlt: "Post Image 1",
-    description: "Val Thorens",
-    heartId: "post1"
-  },
-  {
+    id: 1,
     imgSrc: "https://raw.githubusercontent.com/slyde619/SpotImages/refs/heads/main/images/val-thorens.jpg",
     imgAlt: "Post Image 1",
     description: "Val Thorens",
+    heartId: "post1"
+  },
+  {
+    id: 2,
+    imgSrc: "https://raw.githubusercontent.com/slyde619/SpotImages/refs/heads/main/images/restaurant-terrace.jpg",
+    imgAlt: "Post Image 2",
+    description: "Restaurant terrace",
+    heartId: "post1"
+  },
+  {
+    id: 3,
+    imgSrc: "https://raw.githubusercontent.com/slyde619/SpotImages/refs/heads/main/images/outdoor-cafe.jpg",
+    imgAlt: "Post Image 3",
+    description: "An outdoor cafe",
+    heartId: "post1"
+  },
+  {
+    id: 4,
+    imgSrc: "https://raw.githubusercontent.com/slyde619/SpotImages/refs/heads/main/images/long-bridge.jpg",
+    imgAlt: "Post Image 4",
+    description: "A very long bridge, over the forest...",
+    heartId: "post1"
+  },
+  {
+    id: 5,
+    imgSrc: "https://raw.githubusercontent.com/slyde619/SpotImages/refs/heads/main/images/tunnel-morning-light.jpg",
+    imgAlt: "Post Image 5",
+    description: "Tunnel with morning light",
+    heartId: "post1"
+  },
+  {
+    id: 6,
+    imgSrc: "https://raw.githubusercontent.com/slyde619/SpotImages/refs/heads/main/images/mountain-house.jpg",
+    imgAlt: "Post Image 1",
+    description: "Mountain house",
     heartId: "post1"
   },
    // Add more card objects as needed
