@@ -46,3 +46,19 @@ export function handleClickedOutside(){
     }
   })
 }
+
+// Close modal when clicking the close button
+export function handlePostDialogClickOutside() {
+  // This only works for Post <dialog> with showModal()
+  elements.postDialog.addEventListener("click", (event) => {
+    const rect = elements.postDialog.getBoundingClientRect();
+    const clickedOutside =
+      event.clientX < rect.left ||
+      event.clientX > rect.right ||
+      event.clientY < rect.top ||
+      event.clientY > rect.bottom;
+    if (clickedOutside) {
+      elements.postDialog.close();
+    }
+  });
+}
