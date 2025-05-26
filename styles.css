@@ -468,6 +468,10 @@ main {
   opacity: 1;
 }
 
+.imagemodaloverlay .delete-post {
+  display: none !important;
+}
+
 .imageModal {
   position: relative;
   display: inline-block;

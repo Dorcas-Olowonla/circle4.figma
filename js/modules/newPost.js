@@ -31,7 +31,7 @@ export async function renderSavedPosts() {
         card.className = 'card';
         card.innerHTML = `
             <div class="image-container" style="position:relative;">
-                <img src="${post.img}" alt="Post Image" />
+                <img src="${post.img}" alt="${post.title}" />
                 <button class="delete-post" data-id="${post.heartId}" title="Delete Post">&times;</button>
             </div>
             <div class="card-content">
