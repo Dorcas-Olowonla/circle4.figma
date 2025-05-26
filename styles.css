@@ -423,6 +423,32 @@ main {
   background: #fff;
   z-index: 1000;
 }
+
+.image-container {
+  position: relative;
+}
+.image-container .delete-post {
+  display: none;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(255,255,255,0.4);
+  border: none;
+  font-size: 1.5rem;
+  color: black;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 2;
+}
+.image-container:hover .delete-post {
+  display: block;
+}
+
 /* imageModal Overlay */
 .imageModalOverlay {
   position: fixed;

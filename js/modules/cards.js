@@ -46,21 +46,44 @@ const cards = [
   },
    // Add more card objects as needed
 ];
-
+function generateCardTemplate (cardItem) {
+  return `
+    <article class="card">
+      <img src="${cardItem.imgSrc}" alt="${cardItem.description}" />
+      <div class="card-content">
+        <p>${cardItem.description}</p>
+        <i class="ri-heart-line heart-icon" data-id="${cardItem.heartId}"></i>
+      </div>
+    </article>
+  `;
+}
 // Function to render cards
 export function renderCards() {
   const container = elements.cardContainer;
-  container.innerHTML = ""; // Clear previous cards if any available.
+  // container.innerHTML = ""; // Clear previous cards if any available.
   cards.map(card => {
     const article = document.createElement('article');
     article.className = 'card';
     article.innerHTML = `
-      <img src="${card.imgSrc}" alt="${card.description}" />
+      <div class="image-container">
+        <img src="${card.imgSrc}" alt="${card.description}" />
+        <button class="delete-post" data-id="${card.id}" title="Delete Post">&times;</button>
+      </div>
       <div class="card-content">
         <p>${card.description}</p>
-        <i class="ri-heart-line heart-icon" data-id="${card.heartId}"></i>
+        <i class="ri-heart-line heart-icon" data-id="${card.id}"></i>
       </div>
     `;
+    
+   
+    // Enable delete functionality
+    const deleteBtn = article.querySelector('.delete-post');
+    if (deleteBtn) {
+      deleteBtn.onclick = function() {
+        article.remove();
+        
+      };
+}
     return container.appendChild(article);
   });
 }

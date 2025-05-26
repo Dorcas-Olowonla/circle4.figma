@@ -41,4 +41,5 @@ export const elements = {
   closeImageModalButton: document.querySelector("#closeImgModal"),
   imgModalPreview: document.querySelector("#imgModalPreview"),
   imgModalTitle: document.querySelector("#imgCaption"),
+  
 };
