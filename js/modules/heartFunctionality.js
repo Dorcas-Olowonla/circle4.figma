@@ -10,20 +10,23 @@ export function heartFunctionality(heart) {
   if (saved === "true") {
     heart.classList.remove("ri-heart-line");
     heart.classList.add("ri-heart-fill", "liked");
-  }
-
-  heart.addEventListener("click", () => {
-    const isLiked = heart.classList.contains("ri-heart-fill");
-    if (isLiked) {
-      heart.classList.remove("ri-heart-fill", "liked");
-      heart.classList.add("ri-heart-line");
-      localStorage.setItem(`liked-${id}`, "false");
-    } else {
-      heart.classList.remove("ri-heart-line");
-      heart.classList.add("ri-heart-fill", "liked");
-      localStorage.setItem(`liked-${id}`, "true");
+  } else {
+        heart.classList.remove("ri-heart-fill", "liked");
+        heart.classList.add("ri-heart-line");
     }
-  });
+
+ heart.onclick = () => {
+  const isLiked = heart.classList.contains("ri-heart-fill");
+  if (isLiked) {
+    heart.classList.remove("ri-heart-fill", "liked");
+    heart.classList.add("ri-heart-line");
+    localStorage.setItem(`liked-${id}`, "false");
+  } else {
+    heart.classList.remove("ri-heart-line");
+    heart.classList.add("ri-heart-fill", "liked");
+    localStorage.setItem(`liked-${id}`, "true");
+  }
+};
 }
 
 export function createHeart(card) {

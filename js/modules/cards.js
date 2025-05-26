@@ -60,11 +60,31 @@ function generateCardTemplate (cardItem) {
 // Function to render cards
 export function renderCards() {
   const container = elements.cardContainer;
-  container.innerHTML = ""; // Clear previous cards if any available.
-  
-  cards.forEach((cardItem) => {
-    const cardTemplate = generateCardTemplate(cardItem);
-    container.insertAdjacentHTML("beforeend", cardTemplate);
+  // container.innerHTML = ""; // Clear previous cards if any available.
+  cards.map(card => {
+    const article = document.createElement('article');
+    article.className = 'card';
+    article.innerHTML = `
+      <div class="image-container">
+        <img src="${card.imgSrc}" alt="${card.description}" />
+        <button class="delete-post" data-id="${card.id}" title="Delete Post">&times;</button>
+      </div>
+      <div class="card-content">
+        <p>${card.description}</p>
+        <i class="ri-heart-line heart-icon" data-id="${card.id}"></i>
+      </div>
+    `;
+    
+   
+    // Enable delete functionality
+    const deleteBtn = article.querySelector('.delete-post');
+    if (deleteBtn) {
+      deleteBtn.onclick = function() {
+        article.remove();
+        
+      };
+}
+    return container.appendChild(article);
   });
 }
 
