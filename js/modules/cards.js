@@ -46,17 +46,7 @@ const cards = [
   },
    // Add more card objects as needed
 ];
-function generateCardTemplate (cardItem) {
-  return `
-    <article class="card">
-      <img src="${cardItem.imgSrc}" alt="${cardItem.description}" />
-      <div class="card-content">
-        <p>${cardItem.description}</p>
-        <i class="ri-heart-line heart-icon" data-id="${cardItem.heartId}"></i>
-      </div>
-    </article>
-  `;
-}
+
 // Function to render cards
 export function renderCards() {
   const container = elements.cardContainer;

@@ -20,9 +20,10 @@ function App() {
   setupEventListeners();
   renderSavedPosts();
   renderCards();
+  previewImageModal();
   heart();
   newPosts();
-  previewImageModal();
+  // previewImageModal();
   handlePostDialogClickOutside();
 }
 
