@@ -22,7 +22,8 @@ function App() {
   renderCards();
   heart();
   newPosts();
-  previewImageModal()
+  previewImageModal();
+  handlePostDialogClickOutside();
 }
 
 // Set up all event listeners
