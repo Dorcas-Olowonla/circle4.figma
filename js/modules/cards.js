@@ -91,6 +91,7 @@ export function previewImageModal() {
         elements.imgModalTitle.textContent = imgCaption;
 
         elements.imageModal.classList.add("active");
+        document.body.classList.add("modal-open"); 
         
       }
     });
@@ -100,6 +101,7 @@ export function previewImageModal() {
 elements.closeImageModalButton.addEventListener("click", () => {
   if (elements.imageModal.classList.contains("active")) {
     elements.imageModal.classList.remove("active");
+    document.body.classList.remove("modal-open"); // Remove modal-open class from body  
   }
 });
 

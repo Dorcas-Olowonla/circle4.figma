@@ -498,6 +498,10 @@ main {
   text-transform: capitalize;
 }
 
+body.modal-open .delete-post {
+  display: none !important;
+}
+
 .closeImgModal {
   position: absolute;
   top: -10px;
